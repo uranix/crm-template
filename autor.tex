@@ -1,0 +1,229 @@
+% Encoding: cp1251
+\documentclass{crm-article}
+\usepackage{citehack}
+%\usepackage{rcdcom,rcdthm}
+
+\begin{document}
+
+%Пример оформления см. в файле obrazec.pdf
+
+%\year=2010 % current year by default
+\journalVol{3}
+
+%выпуска
+\journalNo{1}
+\setcounter{page}{161}
+
+% раздел журнала
+\journalSection{}
+
+% дата получения
+\journalReceived{00~апреля 2011~г.}
+%\journalReviewed{20~мая 2010~г.}
+
+%!!!!!!!! \affiliationnoref раскомментировать, если автор один или все авторы из одной организации
+%\affiliationnoref
+
+%!!!!!!!! \emailnoref раскомментировать в том случае, если автор единственный
+%\emailnoref
+
+\UDC{519.8}
+\title{Название статьи}
+\titleeng{Title}
+\thanks{Работа выполнена при поддержке...}%если имеется
+
+%автор - в формате \author{\firstname{И.\,И.}~\surname{Иванов}}
+\author{\firstname{}~\surname{}}
+%автор - в формате \authorfull{Имя Отчество Фамилия (полностью)}
+\authorfull{}
+% автор на англ. - в формате \authoreng{\firstname{I.\,I.}~\surname{Ivanov}}
+\authoreng{\firstname{}~\surname{}}
+%вписать свою электронную почту
+\email{}
+%организация - в формате \affiliation{Московский государственный университет,\protect\\ 141700, г. Москва, ул. Университетская, 9}
+\affiliation{???,\protect\\ ???}
+%организация - в формате \affiliationeng{Moscow State Institute University, 9 University street, Moscow, 141700, Russia}
+\affiliationeng{}
+
+
+
+
+%Если несколько авторов то повторить
+%автор - в формате \author{\firstname{И.\,И.}~\surname{Иванов}}
+\author{\firstname{}~\surname{}}
+%автор - в формате \authorfull{Имя Отчество Фамилия (полностью)}
+\authorfull{}
+% автор на англ. - в формате \authoreng{\firstname{I.\,I.}~\surname{Ivanov}}
+\authoreng{\firstname{}~\surname{}}
+%вписать свою электронную почту
+\email{}
+%организация - в формате \affiliation{Московский государственный университет,\protect\\ 141700, г. Москва, ул. Университетская, 9}
+\affiliation{???,\protect\\ ???}
+
+%организация - в формате \affiliationeng{Moscow State Institute University, 9 University street, Moscow, 141700, Russia}
+\affiliationeng{}
+
+\begin{abstract}
+Аннотация.
+\medskip
+\end{abstract}
+
+
+\keyword{ключевое слово1}
+\keyword{ключевое слово2}
+
+\begin{abstracteng}
+Abstract.
+\medskip
+\end{abstracteng}
+\keywordeng{keyword1}
+\keywordeng{keyword2}
+
+\maketitle
+
+%Раздел
+\paragraph{Введение}
+
+Текст статьи.
+
+
+%%%%%%%%%%%%%%%%%%
+% Команды для оформления текста статьи, включая теоремы, следствия и пр. смотри в файле правила_оформления.txt
+
+%%% выражения типа "то есть", "так далее" не сокращаются, а пишутся полностью.
+%%% обратите внимание, что в выключных формулах пределы интегрирования
+%%% проставляются сверху, а не справа, то есть используется команда \limits.
+%%%
+%%% окружение gather (в том числе в варианте со звездочкой) предпочтительнее
+%%% окружения equation и "двойных" долларов
+
+
+\begin{gather} \label{1}  %%%%%%%%%
+\dot x(t)=\int\limits_{-r}^0 dA(t,s)x(t+s),\quad  t\in\mathbb R=(-\infty,\infty).
+\end{gather}
+
+В дальнейшем систему \eqref{1} будем отождествлять \ldots
+\begin{gather} \label{2}  %%%%%%%%%
+\dot y(t)=\int\limits_{-r}^0 dB(t,s)y(t+s),\quad  t\in\mathbb R=(-\infty,\infty).
+\end{gather}
+
+
+%Оформление теорем с нумерацией
+\begin{teo}
+Текст.
+\end{teo}
+
+\proof*%Доказательство 1 вариант
+Текст доказательства теоремы.\qed
+
+%Оформление теорем без нумерации
+%(вариант со звездочкой возможен и для оформления гипотез, лемм, следствий, предложений, предположений,
+%определений, замечаний, комментариев, примеров, решений)
+\begin{teo*}
+Текст.
+\end{teo*}
+
+%Оформление гипотез
+\begin{hyp}
+Текст.
+\end{hyp}
+
+%Оформление лемм
+\begin{lem}
+Текст.
+\end{lem}
+
+%Оформление следствий
+\begin{cor}
+Текст.
+\end{cor}
+
+%Оформление предложений
+\begin{pro}
+Текст.
+\end{pro}
+
+%Оформление предположений
+\begin{con}
+Текст.
+\end{con}
+
+%Оформление определений
+\begin{fed}
+Текст.
+\end{fed}
+
+%Оформление замечаний
+\begin{rem}
+Текст.
+\end{rem}
+
+%Оформление следствий
+\begin{com}
+Текст.
+\end{com}
+
+%Оформление примеров
+\begin{exl}
+Текст.
+\end{exl}
+
+%Оформление решений
+\begin{sol}
+Текст.
+\end{sol}
+
+
+%Оформление рисунков
+%готовые рисунки в формате eps необходимо сохранять в папку eps, 
+%файлы CorelDraw - в папку cdr (если они имеются).
+\begin{figure}[!ht]
+\centering
+\includegraphics{eps/autor_01.eps}
+\smallskip
+\caption{Подпись к рисунку}
+\end{figure}
+
+
+%Оформление таблиц
+\begin{table}[!ht]
+\centering
+\caption{Пример таблицы}
+\medskip
+\begin{tabular}{|c|c|c|}
+\hline
+Строка 1 & Колонка 2 & Колонка 3\\
+\hline
+Строка 2& Колонка 2 & Колонка 3\\
+\hline
+\end{tabular}
+\end{table}
+
+%Пример выключенной формулы
+$$
+Y= S_1\times S_2\times \ldots \times S_N.
+$$
+
+%% Список литературы
+
+\begin{thebibliography}{99}
+
+\bibitem[Кочин, Подлипский, 2004b]
+{Kochin2004b}
+{\it Кочин~Д.\,Ю., Подлипский~О.\,К.} О границах классов решений в~задачах экспертной
+классификации~// Некоторые проблемы фундаментальной и~прикладной математики. Сборник научных
+трудов.~--- М., 2004.~--- С.~103--118.
+
+\bibitem[Ларичев, 2004]
+{Larichev2000}
+{\it Ларичев~О.\,И.} Теория и~методы принятия решений, а~также Хроника событий в~Волшебных
+Странах.~--- М.: Логос., 2000.~--- 296~с.
+
+\bibitem[Ларичев~и~др., 1989]
+{Larichev1989}
+{\it Ларичев~О.\,И., Мечитов~А.\,И., Мошкович~Е.\,М., Фуремс~Е.\,М.} Выявление экспертных
+знаний.~--- М.:~Наука, 1989.~--- 128~c.
+
+\end{thebibliography}
+
+\end{document}
